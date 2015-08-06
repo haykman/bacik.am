@@ -1,64 +1,288 @@
 <html>
-	<head>
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-		<script src="lib/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-	</head>
-	<body style="background: url('img/bg.jpg');">
-		<nav class="navbar navbar-default">
-			<div class="container">
-			  <div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <a class="navbar-brand" href="#">Bacik.am</a>
-			    </div>
+<head>
+	<meta charset="utf-8" /> 
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.icon-large.min.css">
+	<script src="lib/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	.thumbnail {
+		cursor: pointer;
+	}
+	.icon-large {
+		cursor: pointer;
+	}
+	@font-face {
+		font-family: "Myriadpro";
+		src: url("typography/fonts/myriadpro-regular.eot");
+		src: url("typography/fonts/myriadpro-regular.eot?#iefix") format("embedded-opentype"), url("typography/fonts/myriadpro-regular.woff") format("woff"), url("typography/fonts/myriadpro-regular.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "MyriadproBold";
+		src: url("typography/fonts/myriadpro-bold.eot");
+		src: url("typography/fonts/myriadpro-bold.eot?#iefix") format("embedded-opentype"), url("typography/fonts/myriadpro-bold.woff") format("woff"), url("typography/fonts/myriadpro-bold.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "MyriadproSemibold";
+		src: url("typography/fonts/myriadpro-semibold.eot");
+		src: url("typography/fonts/myriadpro-semibold.eot?#iefix") format("embedded-opentype"), url("typography/fonts/myriadpro-semibold.woff") format("woff"), url("typography/fonts/myriadpro-semibold.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Myriadpro';
+	}
+	p, div {
+		font-family: 'Myriadpro';
+	}
+	</style>
+</head>
+<body style="background: url('img/bg.jpg'); padding-top: 70px;">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Bacik.am</a>
+				</div>
 
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav">
-			        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-			        <li><a href="#">Link</a></li>
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-			          <ul class="dropdown-menu">
-			            <li><a href="#">Action</a></li>
-			            <li><a href="#">Another action</a></li>
-			            <li><a href="#">Something else here</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#">Separated link</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#">One more separated link</a></li>
-			          </ul>
-			        </li>
-			      </ul>
-			      <form class="navbar-form navbar-left" role="search">
-			        <div class="form-group">
-			          <input type="text" class="form-control" placeholder="Search">
-			        </div>
-			        <button type="submit" class="btn btn-default">Submit</button>
-			      </form>
-			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#">Link</a></li>
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-			          <ul class="dropdown-menu">
-			            <li><a href="#">Action</a></li>
-			            <li><a href="#">Another action</a></li>
-			            <li><a href="#">Something else here</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#">Separated link</a></li>
-			          </ul>
-			        </li>
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search">
+								<div class="input-group-addon" style="cursor: pointer;"><span class="glyphicon glyphicon-search" aria-hidden="true"></div>
+							</div>
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/US.png"/> <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><img src="img/AM.png"/> Հայերեն</a></li>
+								<li><a href="#"><img src="img/RU.png"/> на Русском</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<nav class="navbar navbar-default" style="background: white;">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left" role="search">
+					<input type="radio" name="group1">
+					<input type="radio" name="group1">
+					<input type="radio" name="group1">
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Link</a></li>
+				</ul>
 			</div>
 		</nav>
+	</div>
+
+
+	<div class="container" style="background: white; min-height: 500px;">
+
+		<div class="row" style="padding-top: 20px;">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail" style="border-color: lightgray;">
+					<img data-src="holder.js/100%x200" alt="100%x200" src="https://static.greetz.nl/components/entrypages/home/narrow_components/Afbeeldingen-Home-Narrow/beters-1.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block; cursor: pointer;">
+					<div class="caption">
+						<h3>$2.44</h3>
+						<p>Supercard for bday</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail" style="border-color: lightgray;">
+					<img data-src="holder.js/100%x200" alt="100%x200" src="https://static.greetz.nl/components/entrypages/home/narrow_components/Afbeeldingen-Home-Narrow/huw-1.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block; cursor: pointer;">
+					<div class="caption">
+						<h3>$2.44</h3>
+						<p>Supercard for bday</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail" style="border-color: lightgray;">
+					<img data-src="holder.js/100%x200" alt="100%x200" src="https://static.greetz.nl/components/entrypages/home/narrow_components/Afbeeldingen-Home-Narrow/geb-1.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block; cursor: pointer;">
+					<div class="caption">
+						<h3>$2.44</h3>
+						<p>Supercard for bday</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 20px;">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail" style="border-color: lightgray;">
+					<img data-src="holder.js/100%x200" alt="100%x200" src="https://static.greetz.nl/components/entrypages/home/narrow_components/Afbeeldingen-Home-Narrow/huw-1.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block; cursor: pointer;">
+					<div class="caption">
+						<h3>$2.44</h3>
+						<p>Supercard for bday</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail" style="border-color: lightgray;">
+					<img data-src="holder.js/100%x200" alt="100%x200" src="https://static.greetz.nl/components/entrypages/home/narrow_components/Afbeeldingen-Home-Narrow/geb-1.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block; cursor: pointer;">
+					<div class="caption">
+						<h3>$2.44</h3>
+						<p>Supercard for bday</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail" style="border-color: lightgray;">
+					<img data-src="holder.js/100%x200" alt="100%x200" src="https://static.greetz.nl/components/entrypages/home/narrow_components/Afbeeldingen-Home-Narrow/beters-1.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block; cursor: pointer;">
+					<div class="caption">
+						<h3>$2.44</h3>
+						<p>Supercard for bday</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 20px;">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<img data-src="holder.js/100%x200" alt="100%x200" src="https://static.greetz.nl/components/entrypages/home/narrow_components/Afbeeldingen-Home-Narrow/beters-1.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block; cursor: pointer;">
+					<div class="caption">
+						<h3>$2.44</h3>
+						<p>Supercard for bday</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail" style="border-color: lightgray;">
+					<img data-src="holder.js/100%x200" alt="100%x200" src="https://static.greetz.nl/components/entrypages/home/narrow_components/Afbeeldingen-Home-Narrow/beters-1.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block; cursor: pointer;">
+					<div class="caption">
+						<h3>$2.44</h3>
+						<p>Supercard for bday</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail" style="border-color: lightgray;">
+					<img data-src="holder.js/100%x200" alt="100%x200" src="https://static.greetz.nl/components/entrypages/home/narrow_components/Afbeeldingen-Home-Narrow/huw-1.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block; cursor: pointer;">
+					<div class="caption">
+						<h3>$2.44</h3>
+						<p>Supercard for bday</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div style="width:100%; height: 9px; background: URL('img/hr.jpg');"></div>
+		</div>
+		<div class="container" style="background: gray; min-height: 200px; color: white;">
+			<div class="row" style="padding-top: 30px;">
+				<div class="col-md-4">
+					<ul>
+						<li style="cursor: pointer;">about</li>
+						<li style="cursor: pointer;">shmbout</li>
+						<li style="cursor: pointer;">chem inamum inch</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li style="cursor: pointer;">product 1</li>
+						<li style="cursor: pointer;">product 2</li>
+						<li style="cursor: pointer;">product 3</li>
+						<li style="cursor: pointer;">product 4</li>
+						<li style="cursor: pointer;">product 5</li>
+					</ul>
+				</div>
+				<div class="col-md-4" style="padding-top: 120px; height: 150px; text-align: right;">
+					<i class="icon-large icon-facebook"></i>
+					<i class="icon-large icon-twitter"></i>
+					<i class="icon-large icon-vimeo"></i>
+					<i class="icon-large icon-flickr"></i>
+					<i class="icon-large icon-rss"></i>
+					<i class="icon-large icon-skype"></i>
+					<i class="icon-large icon-youtube"></i>
+					<i class="icon-large icon-dropbox"></i>
+					<i class="icon-large icon-linked-in"></i>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="background: #222; min-height: 24px; text-align: right; color: white;">
+			Copyright &copy;2015 by bacik.am
+		</div>
+		<script>
+		$('.thumbnail').each(function(index, el) {
+			$(el).on('mouseover', function() {
+				$(el).css('border-color', 'blue');
+			})
+			$(el).on('mouseout', function() {
+				$(el).css('border-color', 'lightgray');
+			})
+		});
+		$('.icon-large').each(function(index, el) {
+			$(el).on('mouseover', function() {
+				$(el).css('opacity', 0.7);
+			})
+			$(el).on('mouseout', function() {
+				$(el).css('opacity', 1);
+			})
+		});
+		</script>
 	</body>
 </html>
