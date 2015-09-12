@@ -131,7 +131,6 @@
 
 
 	<div class="container" style="background: white; min-height: 500px;">
-
 		<div class="row" style="padding-top: 20px;">
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail" style="border-color: lightgray;">
@@ -227,62 +226,82 @@
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="container">
-			<div style="width:100%; height: 9px; background: URL('img/hr.jpg');"></div>
+			<nav>
+				<ul class="pagination">
+					<li>
+						<a href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li>
+						<a href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		<div class="container" style="background: gray; min-height: 200px; color: white;">
-			<div class="row" style="padding-top: 30px;">
-				<div class="col-md-4">
-					<ul>
-						<li style="cursor: pointer;">about</li>
-						<li style="cursor: pointer;">shmbout</li>
-						<li style="cursor: pointer;">chem inamum inch</li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<ul>
-						<li style="cursor: pointer;">product 1</li>
-						<li style="cursor: pointer;">product 2</li>
-						<li style="cursor: pointer;">product 3</li>
-						<li style="cursor: pointer;">product 4</li>
-						<li style="cursor: pointer;">product 5</li>
-					</ul>
-				</div>
-				<div class="col-md-4" style="padding-top: 120px; height: 150px; text-align: right;">
-					<i class="icon-large icon-facebook"></i>
-					<i class="icon-large icon-twitter"></i>
-					<i class="icon-large icon-vimeo"></i>
-					<i class="icon-large icon-flickr"></i>
-					<i class="icon-large icon-rss"></i>
-					<i class="icon-large icon-skype"></i>
-					<i class="icon-large icon-youtube"></i>
-					<i class="icon-large icon-dropbox"></i>
-					<i class="icon-large icon-linked-in"></i>
-				</div>
+	</div>
+	<div class="container">
+		<div style="width:100%; height: 9px; background: URL('img/hr.jpg');"></div>
+	</div>
+	<div class="container" style="background: gray; min-height: 200px; color: white;">
+		<div class="row" style="padding-top: 30px;">
+			<div class="col-md-4">
+				<ul>
+					<li style="cursor: pointer;">about</li>
+					<li style="cursor: pointer;">shmbout</li>
+					<li style="cursor: pointer;">chem inamum inch</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<ul>
+					<li style="cursor: pointer;">product 1</li>
+					<li style="cursor: pointer;">product 2</li>
+					<li style="cursor: pointer;">product 3</li>
+					<li style="cursor: pointer;">product 4</li>
+					<li style="cursor: pointer;">product 5</li>
+				</ul>
+			</div>
+			<div class="col-md-4" style="padding-top: 120px; height: 150px; text-align: right;">
+				<i class="icon-large icon-facebook"></i>
+				<i class="icon-large icon-twitter"></i>
+				<i class="icon-large icon-vimeo"></i>
+				<i class="icon-large icon-flickr"></i>
+				<i class="icon-large icon-rss"></i>
+				<i class="icon-large icon-skype"></i>
+				<i class="icon-large icon-youtube"></i>
+				<i class="icon-large icon-dropbox"></i>
+				<i class="icon-large icon-linked-in"></i>
 			</div>
 		</div>
-		<div class="container" style="background: #222; min-height: 24px; text-align: right; color: white;">
-			Copyright &copy;2015 by bacik.am
-		</div>
-		<script>
-		$('.thumbnail').each(function(index, el) {
-			$(el).on('mouseover', function() {
-				$(el).css('border-color', 'blue');
-			})
-			$(el).on('mouseout', function() {
-				$(el).css('border-color', 'lightgray');
-			})
-		});
-		$('.icon-large').each(function(index, el) {
-			$(el).on('mouseover', function() {
-				$(el).css('opacity', 0.7);
-			})
-			$(el).on('mouseout', function() {
-				$(el).css('opacity', 1);
-			})
-		});
-		</script>
-	</body>
+	</div>
+	<div class="container" style="background: #222; min-height: 24px; text-align: right; color: white;">
+		Copyright &copy;2015 by bacik.am
+	</div>
+	<script>
+	$('.thumbnail').each(function(index, el) {
+		$(el).on('mouseover', function() {
+			$(el).css('border-color', 'blue');
+		})
+		$(el).on('mouseout', function() {
+			$(el).css('border-color', 'lightgray');
+		})
+	});
+	$('.icon-large').each(function(index, el) {
+		$(el).on('mouseover', function() {
+			$(el).css('opacity', 0.7);
+		})
+		$(el).on('mouseout', function() {
+			$(el).css('opacity', 1);
+		})
+	});
+	</script>
+</body>
 </html>
